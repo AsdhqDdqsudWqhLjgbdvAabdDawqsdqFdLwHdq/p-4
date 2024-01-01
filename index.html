@@ -96,16 +96,6 @@ a:hover {
   margin-top: -40px;
   text-align: center;
   font-weight: bold;
-  min-height: 12.5vh;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
 
 .wrapper {
@@ -119,20 +109,10 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-.time {
-  margin-top: -40px;
-  text-align: center;
-  font-weight: bold;
-  min-height: 8vh;
-}
   .wrapper {
     height: auto;
     min-height: 100vh;
     padding-top: 100px;
-  }
-  .profile-card-form {
-    max-width: 90%;
-    height: auto;
   }
 }
 
@@ -144,22 +124,6 @@ a:hover {
   border-radius: 12px;
   max-width: 700px;
   position: relative;
-}
-
-.profile-card.active .profile-card__cnt {
-  filter: blur(6px);
-}
-
-.profile-card.active .profile-card-message,
-.profile-card.active .profile-card__overlay {
-  opacity: 1;
-  pointer-events: auto;
-  transition-delay: .1s;
-}
-
-.profile-card.active .profile-card-form {
-  transform: none;
-  transition-delay: .1s;
 }
 
 .profile-card__img {
@@ -176,12 +140,6 @@ a:hover {
 }
 
 @media screen and (max-width: 576px) {
-  .time {
-  margin-top: -40px;
-  text-align: center;
-  font-weight: bold;
-  min-height: 7vh;
-}
   .profile-card__img {
     width: 120px;
     height: 120px;
@@ -197,18 +155,13 @@ a:hover {
 }
 
 .profile-card__cnt {
-  margin-top: -35px;
   text-align: center;
-  padding: 0 20px;
-  padding-bottom: 40px;
-  transition: all .3s;
 }
 
 .profile-card__name {
   font-weight: 700;
   font-size: 30px;
   color: #6944ff;
-  margin-bottom: 15px;
 }
 
 .profile-card__txt {
@@ -218,24 +171,12 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.profile-card__txt strong {
-  font-weight: 700;
-}
-
 .profile-card-loc {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  font-weight: 600;
-}
-
-.profile-card-social {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  font-weight: 700;
 }
 
 .profile-card-social__item {
@@ -247,10 +188,6 @@ a:hover {
   font-size: 35px;
   flex-shrink: 0;
   transition: all .3s;
-}
-
-.profile-card-social .icon-font {
-  display: inline-flex;
 }
 </style>
 <script>
