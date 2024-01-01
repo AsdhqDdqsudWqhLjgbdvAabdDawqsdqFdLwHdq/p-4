@@ -66,13 +66,14 @@
 
 html {
   position: relative;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   -moz-user-select: none;
   -o-user-select:none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: var(--theme);
 }
 
 * {
@@ -118,10 +119,20 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+.time {
+  margin-top: -40px;
+  text-align: center;
+  font-weight: bold;
+  min-height: 8vh;
+}
   .wrapper {
     height: auto;
     min-height: 100vh;
     padding-top: 100px;
+  }
+  .profile-card-form {
+    max-width: 90%;
+    height: auto;
   }
 }
 
@@ -165,6 +176,7 @@ a:hover {
 }
 
 @media screen and (max-width: 576px) {
+
   .profile-card__img {
     width: 120px;
     height: 120px;
@@ -234,13 +246,6 @@ a:hover {
 
 .profile-card-social .icon-font {
   display: inline-flex;
-}
-
-@media screen and (max-width: 768px) {
-  .profile-card-form {
-    max-width: 90%;
-    height: auto;
-  }
 }
 </style>
 <script>
