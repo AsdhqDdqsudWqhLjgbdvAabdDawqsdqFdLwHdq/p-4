@@ -63,6 +63,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
   --theme: #303030;
+  --theme-card: #3f3f3f;
   --sub__title: #fff;
   }
 }
@@ -123,7 +124,7 @@ a:hover {
   width: 100%;
   min-height: 460px;
   margin: auto;
-  background: var(--theme);
+  background: var(--theme-card);
   border-radius: 12px;
   max-width: 700px;
   position: relative;
@@ -202,7 +203,7 @@ a:hover {
 }
 </style>
 <script>
-    let snowmax=20
+    let snowmax=0
      
      // Цвета для снежинок. Для каждой конкретной снежинки цвет выбирается случайно из этого массива.
      let snowcolor=new Array("#b9dff5","#7fc7ff","#7fb1ff","#7fc7ff","#b9dff5")
